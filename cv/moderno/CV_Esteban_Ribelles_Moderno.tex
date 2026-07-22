@@ -1,0 +1,147 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0pt]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\definecolor{sidebar}{HTML}{3F3F3F}
+\definecolor{sand}{HTML}{E8E1CF}
+\definecolor{ink}{HTML}{171717}
+\definecolor{softwhite}{HTML}{F7F7F7}
+\definecolor{rulegray}{HTML}{A6A6A6}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\fboxsep}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=2pt,topsep=3pt,parsep=0pt}
+
+\newcommand{\sidetitle}[1]{%
+  \vspace{7pt}{\large\bfseries\color{white}#1}\par
+  \vspace{5pt}{\color{rulegray}\hrule height 0.7pt}\vspace{6pt}
+}
+
+\newcommand{\maintitle}[1]{%
+  \vspace{4pt}{\large\bfseries\color{ink}#1}\par
+  \vspace{4pt}{\color{ink}\hrule height 0.65pt}\vspace{7pt}
+}
+
+\newcommand{\job}[4]{%
+  {\small #1}\hfill{\small #2}\par
+  {\bfseries #3}\hfill{\itshape #4}\par
+}
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[sidebar] (current page.north west) rectangle ([xshift=5.45cm]current page.south west);
+  \fill[sand] ([xshift=5.45cm]current page.north west) rectangle ([yshift=-3.35cm]current page.north east);
+\end{tikzpicture}
+
+\noindent
+\begin{minipage}[t]{5.45cm}
+  \color{softwhite}
+  \vspace{0.72cm}
+  \begin{center}
+    % Para usar una foto, reemplaza el bloque tikz por:
+    % \includegraphics[width=3.05cm,height=3.05cm,keepaspectratio]{foto_esteban.jpg}
+    \begin{tikzpicture}
+      \fill[softwhite] (0,0) circle (1.48cm);
+      \draw[white,line width=1.2pt] (0,0) circle (1.52cm);
+      \node[text=sidebar,font=\fontsize{28}{28}\selectfont\bfseries] at (0,0) {ER};
+    \end{tikzpicture}
+  \end{center}
+
+  \vspace{0.35cm}
+  \begin{center}\small
+    \textbf{Bogot\'a, Colombia}\\[7pt]
+    \href{mailto:estebanribelles27@gmail.com}{\parbox{4.55cm}{\centering estebanribelles27@gmail.com}}\\[7pt]
+    \href{https://github.com/estebanribelles}{github.com/estebanribelles}\\[7pt]
+    \href{https://linkedin.com/in/estebanribelles}{\parbox{4.55cm}{\centering linkedin.com/in/estebanribelles}}
+  \end{center}
+
+  \vspace{0.2cm}
+  \hspace{0.5cm}\begin{minipage}{4.35cm}
+    \sidetitle{HABILIDADES}
+    \small
+    \begin{itemize}[label=\textbullet]
+      \item Arquitectura de sistemas de IA
+      \item Automatizaci\'on de procesos
+      \item Desarrollo full stack
+      \item Dise\~no de APIs y backend
+      \item Sistemas distribuidos
+      \item Resoluci\'on de problemas
+      \item Liderazgo t\'ecnico aut\'onomo
+    \end{itemize}
+
+    \sidetitle{TECNOLOG\'IAS}
+    \small
+    \textbf{Avanzado}\\
+    JavaScript, Angular\\[5pt]
+    \textbf{Intermedio}\\
+    Python, TypeScript, React, Next.js, HTML, CSS, C++\\[5pt]
+    \textbf{Datos e infraestructura}\\
+    MongoDB, Redis, DynamoDB, SQL, Docker, AWS SQS, AWS S3, Cloudflare
+
+    \sidetitle{IDIOMAS}
+    \small
+    \textbf{Espa\~nol} \hfill Nativo\\[5pt]
+    \textbf{Ingl\'es} \hfill B2
+
+    \sidetitle{IA Y DESARROLLO}
+    \small
+    Machine Learning, Reinforcement Learning, LLMs, agentic coding y automatizaci\'on inteligente.
+  \end{minipage}
+\end{minipage}%
+\begin{minipage}[t]{15.95cm}
+  \color{ink}
+  \vspace{1.28cm}
+  \hspace{0.62cm}\begin{minipage}{14.55cm}
+    {\fontsize{24}{26}\selectfont\bfseries ESTEBAN RIBELLES}\par
+    \vspace{3pt}
+    {\fontsize{14}{16}\selectfont AI Systems Engineer \textbar{} Full Stack Developer}
+  \end{minipage}
+
+  \vspace{1.2cm}
+  \hspace{0.62cm}\begin{minipage}{14.55cm}
+    \maintitle{PERFIL PROFESIONAL}
+    \small
+    Ingeniero de software especializado en sistemas inteligentes para automatizaci\'on, an\'alisis y toma de decisiones en fintech. Experiencia integrando LLMs, automatizaci\'on y arquitecturas backend escalables con Node.js, Python y tecnolog\'ias cloud. Actualmente lidero un motor propio que administra m\'as de 3.200 flujos y cerca de 12.000 alertas, reduciendo aproximadamente un 95\,\% el esfuerzo manual de operaci\'on.
+
+    \maintitle{EXPERIENCIA PROFESIONAL}
+    \job{2024--Presente}{Bogot\'a, Colombia}{IA Specialist}{Vyrtium}
+    \vspace{3pt}
+    \small
+    \begin{itemize}
+      \item Dise\~n\'e y desarroll\'e desde cero un motor inteligente de alertas financieras que reemplaz\'o procesos manuales y flujos dependientes de TradingView.
+      \item Arquitect\'e y entregu\'e la primera versi\'on funcional en aproximadamente tres meses, liderando posteriormente su evoluci\'on y operaci\'on en producci\'on.
+      \item Integr\'e modelos de IA para traducir indicadores de Pine Script a Python y ejecutarlos dentro de infraestructura propia.
+      \item Constru\'i la plataforma con Node.js, Python, Angular, MongoDB, Redis y Docker, incorporando Cloudflare para seguridad y protecci\'on.
+      \item Dise\~n\'e una arquitectura paralela y escalable que soporta 11 indicadores en producci\'on, m\'as de 3.200 flujos y cerca de 12.000 alertas.
+      \item Reduje aproximadamente un 95\,\% el esfuerzo manual requerido para administrar y operar las alertas del sistema.
+      \item Lider\'e el desarrollo de forma aut\'onoma, validando decisiones de arquitectura con ingenieros senior.
+      \item Desarrollo nuevas capacidades de Machine Learning y Reinforcement Learning para mejorar el an\'alisis y la generaci\'on de alertas.
+    \end{itemize}
+
+    \maintitle{PROYECTO DESTACADO}
+    \textbf{Motor inteligente de alertas financieras}\par
+    \small
+    Plataforma propia para ejecutar indicadores, administrar flujos y generar alertas financieras a escala. Integra conversi\'on asistida por IA de Pine Script a Python, procesamiento paralelo, persistencia de datos y despliegue contenerizado.
+
+    \maintitle{EDUCACI\'ON}
+    \textbf{Bachiller acad\'emico}\hfill\textbf{2024}\par
+    \small Colegio Biling\"ue Principado de M\'onaco (CBCPM)
+
+    \maintitle{INTERESES PROFESIONALES}
+    \small
+    Productos de inteligencia artificial, automatizaci\'on empresarial, sistemas fintech, arquitecturas escalables y herramientas que mejoren la productividad y la toma de decisiones.
+  \end{minipage}
+\end{minipage}
+
+\end{document}
