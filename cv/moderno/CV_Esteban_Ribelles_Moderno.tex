@@ -49,21 +49,21 @@
   \color{softwhite}
   \vspace{0.72cm}
   \begin{center}
-    % Para usar una foto, reemplaza el bloque tikz por:
-    % \includegraphics[width=3.05cm,height=3.05cm,keepaspectratio]{foto_esteban.jpg}
     \begin{tikzpicture}
-      \fill[softwhite] (0,0) circle (1.48cm);
+      \begin{scope}
+        \clip (0,0) circle (1.48cm);
+        \node[xshift=-0.32cm,yshift=-0.92cm] at (0,0) {\includegraphics[width=4.00cm]{foto_esteban.png}};
+      \end{scope}
       \draw[white,line width=1.2pt] (0,0) circle (1.52cm);
-      \node[text=sidebar,font=\fontsize{28}{28}\selectfont\bfseries] at (0,0) {ER};
     \end{tikzpicture}
   \end{center}
 
   \vspace{0.35cm}
-  \begin{center}\small
+  \begin{center}\fontsize{8.2}{10}\selectfont
     \textbf{Bogot\'a, Colombia}\\[7pt]
     \href{mailto:estebanribelles27@gmail.com}{\parbox{4.55cm}{\centering estebanribelles27@gmail.com}}\\[7pt]
-    \href{https://github.com/estebanribelles}{github.com/estebanribelles}\\[7pt]
-    \href{https://linkedin.com/in/estebanribelles}{\parbox{4.55cm}{\centering linkedin.com/in/estebanribelles}}
+    \href{https://github.com/EstebanRDev27}{\textbf{GitHub:} github.com/EstebanRDev27}\\[7pt]
+    \href{https://linkedin.com/in/estebanribelles}{\parbox{4.55cm}{\centering \textbf{LinkedIn:} linkedin.com/in/estebanribelles}}
   \end{center}
 
   \vspace{0.2cm}
